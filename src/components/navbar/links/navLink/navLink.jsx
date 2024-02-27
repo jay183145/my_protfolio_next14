@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import styles from "./navLink.module.css";
-import { usePathname } from "next/navigation";
+import Link from 'next/link'
+import styles from './navLink.module.css'
+import { usePathname } from 'next/navigation'
 
 const NavLink = ({ item }) => {
-  const pathName = usePathname();
+  const pathName = usePathname()
 
   return (
     <Link
@@ -16,7 +16,7 @@ const NavLink = ({ item }) => {
     >
       {item.title}
     </Link>
-  );
-};
+  )
+}
 
-export default NavLink;
+export default NavLink

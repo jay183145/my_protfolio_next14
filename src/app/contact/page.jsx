@@ -1,15 +1,15 @@
 // "use client";
-import Image from "next/image";
-import styles from "./contact.module.css";
+import Image from 'next/image'
+import styles from './contact.module.css'
 // import dynamic from "next/dynamic";
 // import HydrationTest from "@/components/hydrationTest";
 
 // const HydrationTestNoSSR = dynamic(()=>import("@/components/hydrationTest"), {ssr: false})
 
 export const metadata = {
-  title: "Contact Page",
-  description: "Contact description",
-};
+  title: 'Contact Page',
+  description: 'Contact description',
+}
 
 const ContactPage = () => {
   // const a = Math.random();
@@ -39,7 +39,7 @@ const ContactPage = () => {
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContactPage;
+export default ContactPage

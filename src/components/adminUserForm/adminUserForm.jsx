@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import { addUser } from "@/lib/action";
-import styles from "./adminUserForm.module.css";
-import { useFormState } from "react-dom";
+import { addUser } from '@/lib/action'
+import styles from './adminUserForm.module.css'
+import { useFormState } from 'react-dom'
 
 const AdminUserForm = () => {
-  const [state, formAction] = useFormState(addUser, undefined);
+  const [state, formAction] = useFormState(addUser, undefined)
 
   return (
     <form action={formAction} className={styles.container}>
@@ -22,7 +22,7 @@ const AdminUserForm = () => {
       <button>Add</button>
       {state?.error}
     </form>
-  );
-};
+  )
+}
 
-export default AdminUserForm;
+export default AdminUserForm
