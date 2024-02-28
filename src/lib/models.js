@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema(
       default: false,
     },
   },
-  { timestamps: true },
+  { timestamps: true }
 )
 
 const postSchema = new mongoose.Schema(
@@ -52,7 +52,7 @@ const postSchema = new mongoose.Schema(
       unique: true,
     },
   },
-  { timestamps: true },
+  { timestamps: true }
 )
 
 export const User = mongoose.models?.User || mongoose.model('User', userSchema)
